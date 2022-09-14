@@ -1,0 +1,616 @@
+Hello World!
+
+- Use the DevTools (Inspect Element) in your browser
+- go to console tab
+- type alert("Hello World")
+- type let js = "amazing"
+-- if(js === "amazing") alert("JavaScript is FUN!")
+* alert will only show if js is "amazing"
+- type 40+8+23-10
+* console will return the result
+
+
+A Brief Introduction to JavaScript
+
+- JavaScript
+-- High-level, Object-Oriented, Multi-paradigm Programming
+   Language
+
+- Programming Language
+-- way that we can communicate with the program
+-- tool used to make the program do something
+
+- High-level Language
+-- we do not have to worry about complex stuff like
+   memory management
+
+- Object-Oriented
+-- based on objects for storing most kinds of data
+
+- Multi-paradigm
+-- We can use different styles/structure of programming
+
+
+- Role of JavaScript in Web Development
+-- HTML
+--- Content
+--- Noun
+
+-- CSS
+--- Presentation
+--- Adjectives
+
+-- JS
+--- Programming Language: Building Web Applications
+--- Verbs
+
+
+- There is nothing you can't do with JavaScript (Well,
+  Almost...)
+-- Dynamic effects and web applications in the browser
+* front-end apps
+-- JS made the modern web happen
+--- React, Angular, Vue
+* Learn the JS Fundamentals before going to frameworks
+
+- Web applications on web servers
+*back-end apps
+* JS can run outside browsers
+-- node js
+
+- Native mobile applications
+-- React Native, Ionic
+
+- Native desktop applications
+-- Electron
+
+
+- JavaScript Releases
+-- ES5
+--- ECMAScript
+-- ES6 / ES2015
+--- Biggest update to the language EVER
+-- ES6 / ES2015 onwards
+--- Moden Javascript
+--- New updates to JS every single year
+
+
+Linking a JavaScript File
+- Download all starter code
+- use the starter folder in folder 01-Fundamentals-Part-1
+* linking javascript to html document is by using the
+  script element (<script></script>)
+* it is best practice to end code lines with semi-colon
+  but it is not necessary
+* console in DevTools will not show the result of 
+  computation in the HTML file without console.log()
+* inline scripts (script on the HTML file) is bad practice.
+  Use external
+- create script.js
+- cut the content of script element to script.js
+- add the src attribute (src="") to the script element and
+  put the directory of script.js
+
+
+Values and variables
+- Values
+-- smallest unit of information
+-- The one that you put in a variable
+* we can create variables using "let " then the name of 
+  variable
+* creating variables are called declaration
+* giving values to variables are called assignment
+* declaring variables is better than using raw values
+* camel-casing is the standard way of writing variable names
+* starting the variable name with a number (0-9) is
+  incorrect. It will give a SyntaxError in the Devtools
+  console
+* only allowed char in variable names are a-zA-Z0-9_$
+* reserved key words are also unallowed for variable names
+* do not start with an uppercase letter with the variable
+  name
+* if variable is constant, write the name in all uppercase
+* name variables that holds meaning / connection to its
+  value
+
+
+Assignments
+- refer to assignments-js-fundamentals.pdf
+
+
+Data Types
+- string
+- number
+- value
+-- objects
+-- primitive
+--- when it is not an object
+* most common are number, string, and boolean
+
+--- number
+---- floating point numbers
+* used for decimals and integers
+* let age = 23;
+
+--- string
+---- sequence of characters
+* used for text
+* you need to use "" or '' to make it as a string
+* let firstName = "Jonas";
+
+--- boolean
+---- logical types that can only be true or false
+* used for taking decisions
+* let fullAge = true;
+
+--- undefined
+---- value taken by a variable that is not yet defined
+     ('empty value')
+---- both value and the type of the value
+* let children;
+
+--- null
+---- also means 'empty value'
+---- both value and the type of the value
+
+--- symbol (ES2015)
+---- value that is unique and cannot be changed
+* not useful for now
+
+--- BigInt (ES2020)
+---- Larger integers than the Number type can hold
+
+* JavaScript has dynamic typing; We do not have to manually
+  define the data type of the value stored in a variable.
+  Instead, data types are determined automatically.
+* you can change any different data types in one single 
+  variable
+
+* Value has type, NOT variable!
+
+* commenting lines can be done by using "//" and 
+  ctrl + "/" command for single-line comments, and "/* */" 
+  for multi-line comments
+
+* JavaScript codes are ran from top to bottom
+
+* typeof is a function that shows the type of the value
+
+* You only use the variable name without the "let" when 
+  assigning new value to an existing variable
+
+* bug or error that typeof null, it returns object
+
+
+Let, Const, and Var
+- let and const are introduced during ES6 (ES2015)
+- var is old
+
+- let
+-- mutation/reassignment of variables can be done
+* let age = 30;
+  age = 11;
+
+- const
+-- value in this variable cannot be changed
+* const birthYear = 1991;
+  birthYear = 1998;
+** this will give a an error:
+   TypeError: Assignment to constant variable
+* we cannot delcare empty const variables
+** this will give error:
+   SyntaxError: Missing initializer in const declaration
+
+- var
+-- old way of defining variables
+-- mutation/reassignment of variables can be done
+* var is not the same with let
+* var should be avoided
+
+- without declaration
+* firstName = "John";
+console.log(firstName)
+* bad practice
+* it will create a property to the global object
+
+
+Basic Operators
+- Operator
+-- allows us to transform values or combine values
+-- Mathematical/Arithmetic Operators
+--- + (addition), - (subtraction), / (division), 
+    * (multiplication), % (modulo), ** (exponentiation)
+
+-- Concatenate Operator
+--- combines strings
+--- + (concatenate)
+
+-- typeof Operator
+--- gives the type of the value
+
+-- assignment Operator
+--- assigns a value to the variable
+--- =
+--- +=
+---- variable equals variable + value
+--- -=
+---- variable equals variable - value
+--- *=
+---- variable equals variable * value
+--- /=
+---- variable equals variable / value
+--- ++
+---- increment
+---- increases value of variable by 1
+* this is not advisable to be used
+* https://stackoverflow.com/questions/39706443/why-is-my-javascript-increment-operator-not-working-properly-in-my-addone-f
+--- --
+---- decrement
+---- decreases value of variable by 1
+* this is not advisable to be used
+* https://stackoverflow.com/questions/39706443/why-is-my-javascript-increment-operator-not-working-properly-in-my-addone-f
+
+-- comparison Operator
+--- used to have a boolean result
+--- >, <, >=, <=
+
+* every variable declared in the script that is included
+  in the html document is accessible in the console 
+  DevTools
+
+
+Operator Precedence
+- the order which the operators are executed
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+
+Coding Challenge #1
+- do the challenge
+- refer to the file all-coding-challenges.pdf
+- do it on your codepen
+
+
+Strings and Template Literals
+
+type coercion
+- change the type of value to do operation with the other
+  values
+
+- template literal
+-- first introduced in ES6/ES2015
+-- use back ticks (``)
+-- write a string and insert the variable right there
+-- insertion of variable is done by using "${<name>}"
+* const something = "Hi";
+const exampleString = `Hello ${something}`;
+
+multi-line string
+- before ES6/ES2015
+-- using "\n\"
+* console.log("Hello \n\
+World
+");
+
+- ES6/ES2015 and above
+-- just press enter
+* console.log(`Hello
+World
+`);
+
+
+Taking Decisions: If / Else Statements
+- 
+if(condition) {
+
+} else {
+
+}
+
+- condition
+-- something that has a result of a boolean
+* else block is optional
+* it is called an if-else controlled structure
+
+
+Type Conversion and Coercion
+- type conversion
+-- manually change the from one type to another
+
+- Number() is a function that converts strings to numbers
+* 
+year = "1991";
+console.log(Number(year) + 18);
+
+result: 2009
+- returns "NaN" if string cannot be converted to a number
+* NaN means Not a Number but it is a typeof number
+
+* data type of values are color coded in DevTools console:
+  number is purple
+  string is red / white
+
+- String() is a function that converts numbers to strings
+* 
+year = 1991;
+console.log(String(year));
+
+- type coercion
+-- JavaScript behind the scenes converts one type to
+   proceed execution of the entire code
+* numbers are automatically changed to string if it is +
+  to a string on either side
+** 
+1 + "1" -> "11"
+"1" + 1 -> "11"
+* if there are multiple numbers involved, if this numbers
+  are on the left side of the string, it will do arithmetic
+  operation
+** 1 + 2 + 3 + "9" -> "69"
+* if not, numbers will turn to string
+** "9" + 1 + 2 + 3 -> "9123"
+
+* if the operator used is not +, it will turn the string
+  to number
+** 
+"2" - 1 -> 1
+2 - "1" -> 1
+
+
+do code challenge #2
+- use codepen
+
+
+Truthy and Falsy Values
+- falsy values
+-- not exactly false but turns to false if you turn it to
+   boolean
+-- 5 falsy values
+--- 0
+--- '' (empty string)
+--- undefined
+--- null
+--- NaN
+
+- truthy values
+-- values that turns to true if you turn it to boolean
+
+- Boolean()
+-- is a function that turns values to boolean values
+* not much used due to the conversion should be implicit
+  not explicit
+
+* values are only implicitly converted (type coercion)
+  when logical operators are involved and it is inside
+  if-else statement parentheses
+
+
+Equality Operators: == VS ===
+- ===
+-- strict equality operator
+-- does not do type coercion
+-- this equality operator returns a boolean value
+-- only returns true if both values being compared are
+   EXACTLY the same (same value, same data type)
+
+- ==
+-- loose equality operator
+-- does do type coercion
+-- this equality operator returns a boolean value
+-- only returns true if both values being compared are
+   the same (same value, can be not same data type)
+
+* avoid loose equality operator as much as you can
+
+
+prompt()
+- similar to alert() but you can add an input to it
+* this input can be stored in a variable
+** 
+const favourite = prompt("What's your favourite number?");
+
+
+else if()
+- next if-statement if if-statement is false
+
+
+- inequality
+-- !==
+--- strict inequality operator
+
+-- !=
+--- loose inequality operator
+
+* avoid loose inequality operator
+
+
+Boolean Logic
+- the AND, OR & NOT Operators
+-- AND
+--- only if all conditions are true that the result be
+    true
+
+-- OR
+--- result be true if atleast one condition is true
+
+-- NOT
+--- Inverts true/false value
+
+
+Logical Operators
+- AND
+-- &&
+
+- OR
+-- ||
+
+- NOT
+-- !
+
+
+do code challenge #3
+- use codepen
+
+
+The Switch Statement
+- compares (equality) value to multiple values
+- controlled structure
+- switch()
+-- inside the parentheses is the value to be compared
+-- case/s in switch function
+* you can do multiple lines of code for a single case
+  without using curly brackets
+* end your case with "break" to stop before the next case
+* indication of new case is the usage of "case"
+* you can use same lines of code to multiple cases just by
+indicating the other case directly next line of the other
+case and putting that lines of code to the most recent case
+* default will run if no other cases are the same with the
+  value
+**
+const day = "monday";
+
+switch (day) {
+  case "moday":
+    console.log(`Plan course structure`);
+    console.log(`Go to coding meetup`);
+    break;
+  case "tuesday":
+    console.log(`Prepare theory videos`);
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log(`Write code examples`);
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log(`Enjoy the weekend ;D`);
+    break;
+  default:
+    console.log(`Not a valid day!`);
+}
+
+* use mostly for equality and not other comparison
+
+
+Statements and Expressions
+- Expression
+-- piece of code that will create a value
+* 
+3 + 4
+1991
+true && false && !false
+"23 is bigger"
+
+- Statement
+-- a bigger piece of code that will not create a value
+   itself
+*
+if (23 > 10) {
+  const str = "23 is bigger";
+}
+* const str = "23 is bigger";
+
+* values itself are an expression and when it is assigned
+  to a variable it is a statement
+* you cannot include a statement in a template literal
+
+
+The Conditional (Ternary) Operator
+- like if-else statement but only one line
+- returns a value therefore an expression
+- can be used in a template literal
+*
+const age = 23;
+age >= 18
+  ? console.log(`I like to drink wine 🍷`)
+  : console.log(`I like to drink water 💧`);
+** "?" indicates the if statement
+** ":" indicates the else statement
+
+
+do code challenge #4
+- use codepen
+
+
+Javascript Releases: ES5, ES6+ and ESNEXT
+- a brief history of JS
+-- 1995
+--- Brendan Eich creates the very first version of 
+    JavaScript in just 10 days
+--- It was called Mocha, but already had many fundamental
+    features of modern JavaScript
+-- 1996
+--- Mocha changes to LiveScript and then to JavaScript
+    in order to attract Java developers
+* JavaScript has almost nothing to do with Java
+--- Microsoft launches IE, copying JavaScript from Netscape
+    and calling it JavaScript
+-- 1997
+--- With a need to standardize the language, ECMA Releases
+    ECMAScript 1 (ES1), the first official standard for
+    JavaScript (ECMAScript is the standard, JavaScript the
+    language in practice)
+-- 2009
+--- ES5 (ECMAScript 5) is released with lots of great new
+    features
+-- 2015
+--- ES6/ES2015 (ECMAScript 2015) was released: the biggest
+    update to the language ever!
+--- ECMAScript changes to an annual release cycle in order
+    to ship less features per update
+-- 2016 - infinity
+--- Release of ES2016/ES2017/ES2018/ES2019/ES2020/ES2021/...
+
+- Backwards Compatibility: Don't break the web!
+* JavaScript Engine in modern browsers can run old websites
+  such as the ones that is created during the 90s
+-- Old features are never removed
+-- Not really new versions, just incremental updates
+   (releases)
+-- Websites keep working forever
+
+* JavaScript is not forwards compatibility
+* JavaScript Engine that is old cannot run new websites
+
+- How to use modern JS today
+-- during Development
+--- simply use the latest Google Chrome / any browser
+-- during production
+--- Use Babel to transpile and polyfill your code (
+    converting back to ES5 to ensure browser compatibility
+    for all users)
+-- ES5
+--- Fully supported in all browsers (down to iE 9 from
+    2011)
+--- ready to be used today
+
+-- ES6/ES2015 - ES2020
+--- ES6+: Well supported in all modern browsers
+--- no support in older browsers
+--- can use most features in production with transpiling
+   and polyfilling
+
+* to check ES6 compatibility go here:
+  https://kangax.github.io/compat-table/es6/
+
+-- ES2021 - inifinity
+--- ESNext: Future versions of the language (new feature
+    proposals that reach Stage 4)
+--- Can already use some features in production with
+    transpiling and polyfilling
+    
+- Modern JavaScript from the beginning
+-- learn modern JS from the beginning!
+* but also learn how some things used to be done before
+  modern JavaScript (e.g. const & let vs var and function
+  constructors vs ES6 class)
+
+- 3 reasons why we should not forget the Good Ol' JS:
+-- You will better understand how JS actually works
+-- Many tutorials and code you find online today are
+   still in ES5
+-- When working on old codebases, these will be written
+   in ES5

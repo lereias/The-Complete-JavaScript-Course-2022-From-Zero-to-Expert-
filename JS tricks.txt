@@ -1,0 +1,125 @@
+alert()
+- shows a notification popup with text
+
+
+console.log()
+- used to print what is inside the parentheses "()" on
+  console DevTools in browser
+* you can print multiple values by separating them with a
+  comma (,)
+* console.log(1, 3);
+
+
+typeof
+- used to show the type of the value
+
+
+template literal
+- first introduced in ES6/ES2015
+- use back ticks (``)
+- write a string and insert the variable right there
+- insertion of variable is done by using "${<name>}"
+* const something = "Hi";
+const exampleString = `Hello ${something}`;
+
+multi-line string
+- before ES6/ES2015
+-- using "\n\"
+* console.log("Hello \n\
+World
+");
+
+- ES6/ES2015 and above
+-- just press enter
+* console.log(`Hello
+World
+`);
+
+* you cannot include a statement in a template literal
+
+
+Number()
+- is a function that converts strings to numbers
+* 
+year = "1991";
+console.log(Number(year) + 18);
+
+result: 2009
+- returns "NaN" if string cannot be converted to a number
+* NaN means Not a Number but it is a typeof number
+
+
+String()
+- is a function that converts numbers to strings
+* 
+year = 1991;
+console.log(String(year));
+
+
+Boolean()
+- is a function that turns values to boolean values
+* not much used due to the conversion should be implicit
+  not explicit
+
+
+prompt()
+- similar to alert() but you can add an input to it
+* this input can be stored in a variable
+** 
+const favourite = prompt("What's your favourite number?");
+
+
+switch()
+- compares (equality) value to multiple values
+- controlled structure
+- inside the parentheses is the value to be compared
+- case/s in switch function
+* you can do multiple lines of code for a single case
+  without using curly brackets
+* end your case with "break" to stop before the next case
+* indication of new case is the usage of "case"
+* you can use same lines of code to multiple cases just by
+indicating the other case directly next line of the other
+case and putting that lines of code to the most recent case
+* default will run if no other cases are the same with the
+  value
+**
+const day = "monday";
+
+switch (day) {
+  case "moday":
+    console.log(`Plan course structure`);
+    console.log(`Go to coding meetup`);
+    break;
+  case "tuesday":
+    console.log(`Prepare theory videos`);
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log(`Write code examples`);
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log(`Enjoy the weekend ;D`);
+    break;
+  default:
+    console.log(`Not a valid day!`);
+}
+
+* use mostly for equality and not other comparison
+
+
+The Conditional (Ternary) Operator
+- like if-else statement but only one line
+- returns a value therefore an expression
+- can be used in a template literal
+*
+const age = 23;
+age >= 18
+  ? console.log(`I like to drink wine 🍷`)
+  : console.log(`I like to drink water 💧`);
+** "?" indicates the if statement
+** ":" indicates the else statement

@@ -1,0 +1,17 @@
+setting up our code editor
+- selection of choice - VS code
+- other selections:
+-- atom
+-- brackets
+
+extensions
+- monokai pro
+- monokai classic
+
+settings
+- autosave
+-- onFocusChange
+- word wrap
+-- On
+- Format On Save
+-- check it
